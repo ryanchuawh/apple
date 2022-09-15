@@ -4,45 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>iPhone 12</title>
 </head>
 <body>
     <div id="header">
-        <span><img src="8.png">iPhone 12</span>
+        <span id="headerlogotext"><img src="8.png" id="headerlogo">iPhone 12</span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
         <span>Overview</span>
         <span>Tech Specs</span>
         <button>Buy</button>
     </div>
-    <div>
-        <img src="1.png" alt="various colorways of the iPhone 12">
-        <span>iPhone 12 and iPhone 12 mini</span>
-        <span>Blast past fast.</span>
-        <span>5G speed. A14 Bionic, the fastest chip in a smartphone. An edge-to-edge OLED display. Ceramic Shield with four times better drop performance. And Night mode on every camera. iPhone 12 has it all — in two perfect sizes.</span>
-        <button>Buy</button>
+    <div id="div1">
+        <img src="1.png" alt="various colorways of the iPhone 12" id="div1img">
+        <div id="div1_1">
+            <span class="div1_text">iPhone 12 and iPhone 12 mini</span>
+            <span id="div1_big" class="div1_text"><strong>Blast past fast.</strong></span>
+            <span class="div1_text">5G speed. A14 Bionic, the fastest chip in a smartphone. An edge-to-edge OLED display. Ceramic Shield with four times better drop performance. And Night mode on every camera. iPhone 12 has it all — in two perfect sizes.</span>
+            <button>Buy</button>
+        </div>
+    </div>
+    <div id="div2">
+        <div id="div2_1" class="div2_text">
+            <div class="div2_text">
+                <span>Big news.</span>
+                <span>6.1"</span>
+                <span>Super Retina XDR display</span>
+            </div>
+            <div class="div2_text">
+                <span>Mini news.</span>
+                <span>5.4"</span>
+                <span>Super Retina XDR display</span>
+            </div>
+        </div>
+        <img src="2.png" alt="iPhone 12 and iPhone 12 mini" id="div2_img">
     </div>
     <div>
-        <span>Big news.</span>
-        <span>6.1"</span>
-        <span>Super Retina XDR display</span>
-        <span>Mini news.</span>
-        <span>5.4"</span>
-        <span>Super Retina XDR display</span>
-        <img src="2.png" alt="iPhone 12 and iPhone 12 mini">
-    </div>
-    <div>
-        <video width="100%" height="auto" autoplay="" muted="" loop="" class="full" id="video">
+        <video width=100% height=auto autoplay muted loop>
             <source src="assets/1.mp4" type="video/mp4">
-          </video>
+        </video>
     </div>
     <div>
-        <div>
+        <div id="div4">
             <span>iPhone 12 mini</span>
             <span>iPhone 12</span>
         </div>
-        <div>
+        <div id="div5">
             <span>Capacity</span>
-            <span>64GB<br>128GB<br>256GB</span>
-            <span>64GB<br>128GB<br>256GB</span>
+            <span id="div5_1">64GB<br>128GB<br>256GB</span>
+            <span id="div5_2">64GB<br>128GB<br>256GB</span>
         </div>
         <div>
             <span>Size and Weight</span>
@@ -107,45 +122,47 @@
                 Fast-charge capable: Up to 50% charge in 30 minutes with 20W adapter or higher (sold separately)</span>
         </div>
     </div>
-    <div>
-        <img src="3.png" alt="variations of iPhone 12">
-    </div>
-    <div>
-        <span>Buy iPhone 12</span>
-        <div>
-            <label for="first-name">First Name</label>
-            <div>
-              <input
-                id="first-name"
-                name="first-name"
-                type="text"
-                placeholder="Ryan"
-                required>
-            </div>
+    <div id="container">
+        <div id="container_img">
+            <img src="3.png" alt="variations of iPhone 12">
         </div>
-        <div>
-            <label for="last-name">Last Name</label>
+        <div id="container_form">
+            <span>Buy iPhone 12</span>
             <div>
-              <input
-                id="last-name"
-                name="last-name"
-                type="text"
-                placeholder="Chua"
-                required>
+                <label for="first-name">First Name</label>
+                <div>
+                  <input
+                    id="first-name"
+                    name="first-name"
+                    type="text"
+                    placeholder="Ryan"
+                    required>
+                </div>
             </div>
-        </div>
-        <div>
-            <label for="email">Email</label>
             <div>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="ryan123@apple.com"
-                required>
+                <label for="last-name">Last Name</label>
+                <div>
+                  <input
+                    id="last-name"
+                    name="last-name"
+                    type="text"
+                    placeholder="Chua"
+                    required>
+                </div>
             </div>
+            <div>
+                <label for="email">Email</label>
+                <div>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="ryan123@apple.com"
+                    required>
+                </div>
+            </div>
+            <button>Submit</button>
         </div>
-        <button>Submit</button>
     </div>
 </body>
 </html>
