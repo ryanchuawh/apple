@@ -11,10 +11,12 @@
 <body>
     <div id="header">
         <div id="nav-bar">
-            <img id="header-img" src="8.png">
-            <span id="nav-iphone-12">
-                <b>iPhone 12</b>
-            </span>
+            <div>
+                <img id="header-img" src="8.png">
+                <span id="nav-iphone-12">
+                    <b>iPhone 12</b>
+                </span>
+            </div>
             <span></span>
             <span></span>
             <span></span>
@@ -42,14 +44,15 @@
                     <img src="1.png" alt="various colorways of the iPhone 12">
                 </div>
                 <br>
-                <div id="overview_content medium">iPhone 12 and iPhone 12 mini</div>
+                <div class="overview-content medium">iPhone 12 and iPhone 12 mini</div>
                 <br>
-                <div class="overview_content large">Blast past fast.</div>
-                <div class="overview_content medium">
+                <div class="overview-content large">Blast past fast.</div>
+                <br>
+                <div class="overview-content medium">
                     5G speed. A14 Bionic, the fastest chip in a smartphone. An
                     edge-to-edge OLED display. Ceramic Shield with four times better
                     drop performance. And Night mode on every camera. iPhone 12 has it
-                    all - in two perfect sizes.
+                    all — in two perfect sizes.
                 </div>
                 <br>
                 <div>
@@ -64,7 +67,7 @@
                     <div class="text-container grid-item-1">
                         <div class="big text">Big news.</div>
                         <div class="big text">6.1"</div>
-                        <div class="text" style="font-size: 16px;">Super Retina XDR display</div>
+                        <div class="text" style="font-size: 16px">Super Retina XDR display</div>
                     </div>
                     <div class="text-xontainer grid-item-2">
                         <br>
@@ -101,12 +104,12 @@
             </div>
             <div class="strong">Display</div>
             <div>
-                <img src="6.png"><br>Super Retina XDR display<br>
+                <img src="6.png" class="display-img"><br>Super Retina XDR display<br>
                 5.4-inch (diagonal) all-screen OLED display<br>
                 2340-by-1080-pixel resolution at 476 ppi
             </div>
             <div>
-                <img src="7.png"><br>Super Retina XDR display<br>
+                <img src="7.png" class="display-img"><br>Super Retina XDR display<br>
                 6.1-inch (diagonal) all-screen OLED display<br>
                 2532-by-1170-pixel resolution at 460 ppi
             </div>
@@ -151,6 +154,8 @@
                 <b>Video playback (streamed):</b>
                 <br>
                 Up to 10 hours</span>
+                <br>
+                <br>
                 <b>Audio playback:</b>
                 <br>
                 Up to 50 hours
@@ -165,13 +170,15 @@
                 <b>Video playback (streamed):</b>
                 <br>
                 Up to 11 hours</span>
+                <br>
+                <br>
                 <b>Audio playback:</b>
                 <br>
                 Up to 65 hours
                 <br>
             </div>
             <div></div>
-            <div class="twocoulmns">
+            <div class="twocolumns">
                 <b>Both models:</b>
                 <br>
                 <br>
@@ -232,7 +239,7 @@
                                     required>
                                 </div>
                             </div>
-                            <div id="button-id">
+                            <div id="button-div">
                                 <button type="submit" id="submit">Submit</button>
                             </div>
                         </div>
@@ -241,7 +248,6 @@
                         <label class="switch" id="switch">
                             <input type="checkbox" onclick="toggle()">
                             <span class="slider round">
-                                ::before
                             </span>
                         </label>
                     </div>

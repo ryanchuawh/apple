@@ -7,6 +7,10 @@ body {
     display: block;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media (orientation: landscape) {
     body {
         font-size: 2vmin;
@@ -54,12 +58,14 @@ body img {
     color: #737373;
     font-size: 0.7rem;
     display: none;
+    text-decoration: none;
 }
 
 @media (orientation: landscape) {
     .nav-overview, .nav-tech-specs {
         display: block;
         font-size: 14px;
+        text-decoration: none;
     }
 }
 
@@ -131,6 +137,16 @@ body img {
     }
 }
 
+#overview-div .overview-content {
+    width: 80%;
+    text-align: center;
+}
+
+@media (orientation: landscape) {
+    #overview-div .overview-content {
+        width: 50%;
+    }
+}
 
 #overview-div #overview-subdiv-1 {
     background-color: #f2f2f2;
@@ -189,12 +205,12 @@ body img {
     padding-top: 60px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-columns: auto;
+    grid-template-rows: auto;
 }
 
 #overview-div #overview-subdiv-2 .big-news-mini-news-text {
     display: grid;
-    grid-template-columns: repeat (2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -310,9 +326,12 @@ video {
     }
 }
 
-
 .background1 {
     background-color: #f2f2f2;
+}
+
+.lightgray {
+    background-color: #737373;
 }
 
 #buy-div .container {
@@ -350,10 +369,25 @@ video {
     height: auto;
 }
 
+@media (orientation: landscape) {
+    #buy-div .container .buy-div-left img {
+        width: 75%;
+    }
+}
+
+
 #buy-div .container .buy-div-right {
     padding: 25px;
     padding-top: 0px;
 }
+
+@media (orientation: landscape) {
+    #buy-div .container .buy-div-right {
+        padding: 40px;
+        padding-left: 0px;
+    }
+}
+
 
 #buy-div .container .buy-div-right form {
     padding-top: 20px;
@@ -363,6 +397,13 @@ video {
     font-size: 1em;
 }
 
+@media (orientation: landscape) {
+    #buy-div .container label {
+        font-size: 1.5vw;
+    }
+}
+
+
 input[type="text"], input[type="email"], input[type="number"], select {
     width: 100%;
     padding: 1em;
@@ -371,6 +412,13 @@ input[type="text"], input[type="email"], input[type="number"], select {
     border: 0.2vmin solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+@media (orientation: landscape) {
+    input[type="text"], input[type="email"], input[type="number"], select {
+        padding: 2vmin;
+        margin: 1vmin 0vmin;
+    }
 }
 
 #button-div {
@@ -392,6 +440,15 @@ button[type="submit"] {
     border-radius: 4px;
 }
 
+@media (orientation: landscape) {
+    button[type="submit"] {
+        font-size: 2.2vmin;
+        padding: 1.5vmin 2vmin;
+        border-radius: 4px;
+    }
+}
+
+
 .switch {
     position: relative;
     display: inline-block;
@@ -403,6 +460,14 @@ button[type="submit"] {
     opacity: 0;
     width: 0;
     height: 0;
+}
+
+input:checked + .slider {
+    background-color: #1274e0;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #1274e0;
 }
 
 .slider.round {
@@ -435,6 +500,12 @@ button[type="submit"] {
     background-color: white;
     -webkit-transition: 0.4s;
     transition: 0.4s;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 .modal {
